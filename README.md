@@ -38,3 +38,9 @@ npm start
 - 提交前对照[产品目标与当前进度](docs/PROJECT.md)，记录新增作品的原作、可观察结果和同类对照。正文页面和重点交互以 PC 浏览器验证。
 
 图像、视频和声音保留原作者的署名与来源。这些素材的权利和使用条件遵循原作者或发布平台的声明。
+
+## 发布与回查
+
+1. 在 [wp-i/ai-now](https://github.com/wp-i/ai-now) 记录源码提交与本轮选材记录。
+2. 更新公开站时，使用 `.openai/hosting.json` 对应的现有 Sites 项目，从待发布的源码构建。发布后在 PC 打开正式站，检查首页、受影响的分类页，以及作品的媒体和来源入口。在审核记录中写下站点版本和验证结果。
+3. 作品集的项目信息维护在 [wp-i/wp-homepage](https://github.com/wp-i/wp-homepage) 的 `src/content/site.ts`。作品集入口有变化时，等 GitHub Pages 发布完成，再检查公开条目能打开站点和源码。
