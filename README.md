@@ -2,15 +2,15 @@
 
 通过真实作品了解 AI 做到了哪一步。看一张原图、拖动一次前后对照，或用十几秒看完一段原片。
 
-**[打开 AI Now ↗](https://ai-now-cn-261113.wp9617.chatgpt.site/)** · 中文 · 无需登录
+**[打开 AI Now](https://ai-now-cn-261113.wp9617.chatgpt.site/)** · 中文 · 无需登录
 
 [![AI Now 电脑端首页。左侧是冻在冰里的红色手提包，右侧是《REDLINE》的夜雨赛车。](docs/media/home-desktop.jpg)](https://ai-now-cn-261113.wp9617.chatgpt.site/)
 
-一次图像编辑，连半透明的玻璃和反光都得一起改。一个赛道镜头，靠水面倒影和低机位让速度有了重量。作品附原作者出处，也交代参考素材、人工参与和这次结果成立的条件。
+每件作品都附原作者出处。用到参考素材、人工剪辑或其他制作协作时，页面会写清这些条件。
 
 - **图像** · 玻璃壶被移到柠檬篮后，遮挡和倒影一起变化。[拖动对照](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/images#glass-pitcher-edit)
 - **视频** · 两辆车在湿滑赛道贴近镜头，车灯沿积水掠过。[看《REDLINE》](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/video#redline)
-- **声音、游戏与网页** · 听一首歌怎样转入副歌，走进积水教堂打一场首领战，或在网页打字机上敲字。[声音](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/audio) · [游戏](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/software) · [网页](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/creative)
+- **声音、游戏与网页** · 听电子舞曲副歌，试玩教堂首领战，体验网页打字机。[声音](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/audio) · [游戏](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/software) · [网页](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/creative)
 
 ## 本地运行
 
