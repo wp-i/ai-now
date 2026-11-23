@@ -1,0 +1,51 @@
+.artwork-stage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  background: #2a241e;
+}
+
+.artwork-stage > img,
+.artwork-stack,
+.artwork-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.artwork-stack img[hidden] { display: none; }
+
+.artwork-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px 8px;
+  margin-top: 8px;
+}
+
+.artwork-controls button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding-inline: 10px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #202622;
+  color: var(--muted);
+  font: inherit;
+  font-size: .875rem;
+  cursor: pointer;
+}
+
+.artwork-controls button[aria-pressed="true"] {
+  background: #344037;
+  color: var(--ink);
+}
+
+.artwork-controls button:hover:not(:disabled) { border-color: var(--accent); }
+.artwork-controls button:disabled { opacity: .54; cursor: default; }
+.artwork-controls .artwork-reset { margin-inline-start: auto; border-color: transparent; background: transparent; }
+.artwork-unavailable { color: var(--muted); margin-top: 8px; }

@@ -1,0 +1,156 @@
+.image-comparison {
+  --comparison-height: var(--primary-media-height, 420px);
+  --comparison-column-gap: clamp(8px, 1.6vw, 17px);
+  --comparison-reference-gap: clamp(7px, 1.1vw, 11px);
+  --comparison-reference-offset: calc(var(--comparison-reference-gap) * .628);
+  display: grid;
+  grid-template-columns:
+    minmax(0, calc((100% - var(--comparison-column-gap)) * 2 / 3 + var(--comparison-reference-offset) / 3))
+    minmax(0, 1fr);
+  align-items: start;
+  gap: 9px var(--comparison-column-gap);
+  width: min(100%, calc(var(--comparison-height) * .942 + var(--comparison-column-gap) - var(--comparison-reference-offset) / 2));
+  margin-inline: auto;
+  color: #1a2822;
+}
+
+.comparison-stage {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 628 / 1000;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ab805b;
+  cursor: ew-resize;
+  touch-action: pan-y pinch-zoom;
+  user-select: none;
+}
+
+.image-comparison.image-comparison-wide {
+  width: 100%;
+  grid-template-columns: minmax(0,1fr);
+}
+
+.comparison-stage img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.comparison-after { clip-path: inset(0 0 0 var(--split)); }
+
+.comparison-seam {
+  position: absolute;
+  inset-block: 0;
+  left: var(--split);
+  width: 1px;
+  background: #fff9eb;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 1px #17251d52;
+  pointer-events: none;
+}
+
+.comparison-handle {
+  --comparison-thumb-size: 46px;
+  position: absolute;
+  left: clamp(calc(var(--comparison-thumb-size) / 2), var(--split), calc(100% - var(--comparison-thumb-size) / 2));
+  top: 50%;
+  width: var(--comparison-thumb-size);
+  height: var(--comparison-thumb-size);
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ded6be;
+  border-radius: 50%;
+  color: #1a2822;
+  background: #fff9eb;
+  box-shadow: 0 2px 10px #17251d55;
+  pointer-events: none;
+}
+
+.comparison-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.comparison-stage:has(.comparison-range:focus-visible) .comparison-handle {
+  outline: 2px solid #254c3c;
+  outline-offset: -5px;
+}
+
+@media (hover: hover) {
+  .comparison-stage:hover .comparison-handle { background: #fffdf4; }
+}
+
+.comparison-reference {
+  display: grid;
+  gap: var(--comparison-reference-gap);
+  min-width: 0;
+}
+
+.comparison-reference figure {
+  position: relative;
+  width: 100%;
+  aspect-ratio: var(--reference-aspect, 628 / 1000);
+  margin: 0;
+}
+
+.comparison-reference img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.comparison-reference figcaption {
+  position: absolute;
+  inset: auto auto 5px 5px;
+  max-width: calc(100% - 10px);
+  padding: 2px 5px;
+  border-radius: 3px;
+  color: #fff9eb;
+  background: #1a2822eb;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.4;
+}
+
+.comparison-instructions {
+  grid-column: 1 / -1;
+  justify-self: start;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.image-comparison:not(:has(.comparison-stage)) .comparison-reference {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 740px) {
+  .image-comparison { width: min(100%, 435px); }
+}
+
+@media (forced-colors: active) {
+  .comparison-seam,
+  .comparison-handle {
+    forced-color-adjust: none;
+    color: CanvasText;
+    background: Canvas;
+    border-color: CanvasText;
+  }
+
+  .comparison-stage:has(.comparison-range:focus-visible) .comparison-handle {
+    outline-color: Highlight;
+  }
+}

@@ -1,0 +1,40 @@
+export const kodaOpening = {
+  id: "enbu-opening",
+  topic: "video",
+  product: "Kōda · Seedance 2.5 / Claude Opus 5.5",
+  role: "卡点重剪",
+  date: "2026-10-14",
+  title: "《炎舞》踩着重拍扫出火圈",
+  summary: "火焰随拳头冲向镜头。鼓声一响，画面就切到扫腿，火圈绕着人转了一整圈。",
+  limit: "作者选定动作素材，AI 负责重剪、加片名和制作配乐。",
+  source: { label: "Kōda 原片和制作记录", url: "https://x.com/aimikoda/status/2110119492076404869" },
+  video: {
+    src: "/originals/enbu-opening.mp4",
+    poster: "/originals/enbu-opening.png",
+    previewStart: 4.4,
+    previewSeconds: 4.9,
+    duration: "0:32",
+    label: "Kōda 的《炎舞》原片，出拳、扫腿和火圈切在音乐节拍上",
+  },
+};
+
+export const noirTeaser = {
+  id: "dog-noir-teaser",
+  topic: "video",
+  product: "koodoll · Newtake / Claude Code",
+  role: "节拍剪辑与字效",
+  date: "2026-11-11",
+  title: "《犬》把雨夜的打斗切进鼓点",
+  summary: "雨里的人影、侧踢和室内特写跟着鼓点切换。镜头一换，字就从后视镜边缘跳到人物面前。",
+  limit: "作者决定镜头和成片的取舍，AI 按节拍剪画面、加闪字。",
+  source: { label: "koodoll 原始预告和剪辑说明", url: "https://x.com/koodpll/status/2120441265133330742" },
+  video: {
+    src: "/originals/dog-noir-teaser.mp4",
+    poster: "/originals/dog-noir-teaser.png",
+    previewStart: 3.2,
+    previewSeconds: 4.7,
+    duration: "0:45",
+    aspect: "9 / 16",
+    label: "koodoll 的《犬》原始预告，雨夜打斗之间穿插贴在画面上的卡点文字",
+  },
+};

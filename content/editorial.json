@@ -1,0 +1,592 @@
+{
+  "edition": "2026-11-13",
+  "checkedAt": "2026-11-13T03:31:48.000Z",
+  "stories": [
+    {
+      "id": "gemini-hydrogen",
+      "category": "chat",
+      "area": "global",
+      "tag": "免费档可用",
+      "title": "Gemini 4 Hydrogen 开放免费体验",
+      "summary": "Gemini 4 Hydrogen 开始向各套餐推出。免费账号提交适合的问题时，由 Gemini 自动选用该模型。",
+      "impact": "可以把几段公开资料交给它，要求做成对照表，并为每项差异标出原文依据。",
+      "access": "在支持地区打开 Gemini。免费档由系统按问题自动选择，付费档按账户开放情况从模型菜单选择。",
+      "published": "2026-11-13",
+      "sources": [
+        {
+          "label": "Google Hydrogen 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        },
+        {
+          "label": "Gemini 额度与功能",
+          "url": "https://support.google.com/gemini/answer/16275805?hl=en"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      },
+      "prompt": "根据下面三段资料制作对照表，每条差异都引用原句，资料里找不到的信息标记为待核实。"
+    },
+    {
+      "id": "gemini-carbon",
+      "category": "chat",
+      "area": "global",
+      "tag": "新模型",
+      "title": "Gemini 4 Carbon 向 Ultra 开放",
+      "summary": "Google 开始向符合条件的账号开放 Carbon。个人用户在 Gemini 应用里体验，需要 Google AI Ultra。",
+      "impact": "可以用一份带附件的复杂任务判断它是否适合自己，例如要求逐项列出文件里的矛盾与对应页码。",
+      "access": "Gemini 应用与搜索 AI 模式面向 Ultra 订阅者逐步开放。开发者可通过付费 Gemini API 使用。",
+      "published": "2026-11-11",
+      "sources": [
+        {
+          "label": "Google Carbon 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "id": "seedream-55",
+      "category": "image",
+      "area": "cn",
+      "tag": "生图更新",
+      "title": "即梦也能选 Seedream 5.5",
+      "summary": "字节跳动发布 Seedream 5.5，正在即梦、豆包、豆包工作和火山方舟陆续上线。",
+      "impact": "要给商品换背景，可以先试局部编辑，再放大检查商品轮廓和标签。模型也支持生成透明背景素材。",
+      "access": "即梦网页版可在生成或画布里查看模型选择。开放进度、积分和会员权益以账户页面为准。",
+      "published": "2026-11-09",
+      "sources": [
+        {
+          "label": "字节跳动 Seed 发布公告",
+          "url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+        },
+        {
+          "label": "即梦功能与会员权益",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ],
+      "action": {
+        "label": "打开即梦",
+        "url": "https://jimeng.jianying.com/"
+      },
+      "prompt": "保留商品及标签，只将背景换成浅灰摄影棚，保持原有裁切和商品颜色。"
+    },
+    {
+      "id": "omni-flash-12",
+      "category": "video",
+      "area": "global",
+      "tag": "视频更新",
+      "title": "Google Vids 可以生成 15 秒片段",
+      "summary": "Gemini Omni 1.2 Flash 支持生成 15 秒短片。Google 公告称，Google Vids 中有无需额外付费的生成入口。",
+      "impact": "可以先做一段产品演示或视频开头，检查镜头是否按描述运动，再决定是否剪进正片。",
+      "access": "个人 Google 账号的官方额度为每月 60 秒，入口以账户页面为准。Gemini 应用里的 15 秒生成向 Ultra 订阅者逐步开放。",
+      "published": "2026-11-06",
+      "sources": [
+        {
+          "label": "Google 视频模型发布公告",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        },
+        {
+          "label": "Gemini 视频生成说明",
+          "url": "https://support.google.com/gemini/answer/16126339?hl=en-12"
+        },
+        {
+          "label": "Google Vids 账户与额度",
+          "url": "https://support.google.com/docs/answer/15609411?hl=en"
+        }
+      ],
+      "action": {
+        "label": "打开 Google Vids",
+        "url": "https://docs.google.com/videos/create"
+      }
+    },
+    {
+      "id": "chatgpt-images-26",
+      "category": "image",
+      "area": "global",
+      "tag": "免费档可用",
+      "title": "ChatGPT 免费版也能用 Images 2.6",
+      "summary": "OpenAI 将 Images 2.6 开放给 ChatGPT 各套餐。免费版有单独的生图额度。",
+      "impact": "适合先做海报初稿，或者上传图片并圈选要改的部分。定稿前逐字核对图中文字。",
+      "access": "在支持地区登录 ChatGPT 后进入图片功能。高级思考生图的资格随套餐而定。",
+      "published": "2026-11-04",
+      "sources": [
+        {
+          "label": "OpenAI Images 2.6 发布公告",
+          "url": "https://openai.com/index/introducing-images-2-6/"
+        },
+        {
+          "label": "ChatGPT 图片功能说明",
+          "url": "https://help.openai.com/en/articles/11084440-images-in-chatgpt"
+        },
+        {
+          "label": "ChatGPT 免费版说明",
+          "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+        },
+        {
+          "label": "ChatGPT 支持地区",
+          "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"
+        }
+      ],
+      "action": {
+        "label": "打开 ChatGPT 图片",
+        "url": "https://chatgpt.com/images"
+      },
+      "prompt": "做一张竖版咖啡海报，只排四个中文字「周五特调」，底部留白，方便我后续加价签。"
+    },
+    {
+      "id": "gemini-app-users",
+      "category": "chat",
+      "area": "global",
+      "tag": "用户数据",
+      "title": "Gemini 应用披露达到 10 亿用户",
+      "summary": "Alphabet 在北京时间 10 月 29 日的财报电话会上称，Gemini 应用已达到 10 亿用户。该数字覆盖应用整体。",
+      "impact": "Carbon 与 Hydrogen 的独立用户数和增长速度暂无可核实的公开数据。",
+      "access": "免费档通过自动模型选择访问 Hydrogen。Carbon 的个人应用入口要求 Google AI Ultra。",
+      "published": "2026-10-29",
+      "sources": [
+        {
+          "label": "Alphabet 第三季度财报电话会",
+          "url": "https://abc.xyz/investor/events/event-details/2026/2026-Q3-Earnings-Call-2026-Ujou16CTw9/default.aspx"
+        },
+        {
+          "label": "Google Carbon 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        },
+        {
+          "label": "Google Hydrogen 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "id": "gpt-61-access",
+      "category": "work",
+      "area": "global",
+      "tag": "入口核对",
+      "title": "想用 GPT-6.1，先找 Work 或 Codex",
+      "summary": "GPT-6.1 Sol 与 Terra 出现在 ChatGPT Work 和 Codex 的模型列表，日常 Chat 有自己的模型菜单。",
+      "impact": "需要处理文件、连续执行任务或在项目里改代码，可以按自己的入口查看 GPT-6.1。目前缺少可直接比较 GPT-6.1 与 DeepSeek V4.1 热度的同口径公开用量数据。",
+      "access": "Work 和 Codex 的模型、额度和企业权限按套餐而定。普通 Chat 免费版的默认模型为 GPT-5.6 Luna。",
+      "published": "2026-10-26",
+      "sources": [
+        {
+          "label": "OpenAI Terra 发布公告",
+          "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+        },
+        {
+          "label": "ChatGPT 模型与可用范围",
+          "url": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt"
+        },
+        {
+          "label": "ChatGPT Work 与 Codex 使用说明",
+          "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex"
+        },
+        {
+          "label": "DeepSeek 官方更新",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news261017/"
+        }
+      ],
+      "action": {
+        "label": "查看 Work 与 Codex",
+        "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex"
+      }
+    },
+    {
+      "id": "deepseek-1017",
+      "category": "chat",
+      "area": "both",
+      "tag": "免费入口",
+      "title": "DeepSeek 官网与 App 已换上 1017 版",
+      "summary": "DeepSeek 将官方网页、App 与 API 更新到 V4.1-Flash-1017，官方 App 提供免费对话。",
+      "impact": "可以拿一段公开资料试总结或改写。需要把它接进应用时，先查 API 单独计费规则。",
+      "access": "官方 App 可免费对话。API 按用量计费，API 的网页搜索与抓取按请求另计。",
+      "published": "2026-10-17",
+      "sources": [
+        {
+          "label": "DeepSeek 官方更新",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news261017/"
+        },
+        {
+          "label": "DeepSeek 官方应用",
+          "url": "https://deepseek.com/download/"
+        },
+        {
+          "label": "DeepSeek API 价格",
+          "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/"
+        }
+      ],
+      "action": {
+        "label": "打开 DeepSeek",
+        "url": "https://chat.deepseek.com/"
+      },
+      "prompt": "把这份公开资料整理成 5 条要点，每条附原文依据，并标出还缺哪些信息。"
+    }
+  ],
+  "tools": [
+    {
+      "id": "deepseek-chat",
+      "category": "chat",
+      "area": "both",
+      "brand": "DeepSeek",
+      "model": "V4.1-Flash-1017",
+      "summary": "中文问答、总结和改写，网页与 App 已更新到 1017 版。",
+      "price": "free",
+      "priceLabel": "官方 App 免费",
+      "limits": "官方 App 免费对话。接入 API 需单独付费。",
+      "task": "把长文压缩成可核对的摘要。",
+      "prompt": "把下面的文章压缩成五条要点。每条引用一句原文支撑；拿不准的放进待核实列表。",
+      "sources": [
+        {
+          "label": "DeepSeek 官方更新",
+          "url": "https://api-docs.deepseek.com/zh-cn/news/news261017/"
+        },
+        {
+          "label": "DeepSeek 官方应用",
+          "url": "https://deepseek.com/download/"
+        },
+        {
+          "label": "DeepSeek API 价格",
+          "url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/"
+        }
+      ],
+      "action": {
+        "label": "打开 DeepSeek",
+        "url": "https://chat.deepseek.com/"
+      }
+    },
+    {
+      "id": "gemini-hydrogen-tool",
+      "category": "chat",
+      "area": "global",
+      "brand": "Gemini",
+      "model": "Gemini 4 Hydrogen",
+      "summary": "可处理日常写作和资料整理。Gemini 免费档由系统按问题自动选用。",
+      "price": "free",
+      "priceLabel": "免费档自动选用",
+      "limits": "免费账号通过自动模型选择获得访问。付费账号可在模型菜单查看，开放范围和用量按套餐与地区区分。",
+      "task": "把多份材料整理成对照表。",
+      "prompt": "读完附件再做表，每一项差异引用原句和文件名，并标明能否核实。",
+      "sources": [
+        {
+          "label": "Google Hydrogen 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        },
+        {
+          "label": "Gemini 额度与功能",
+          "url": "https://support.google.com/gemini/answer/16275805?hl=en"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "id": "chatgpt-free",
+      "category": "chat",
+      "area": "global",
+      "brand": "ChatGPT",
+      "model": "GPT-5.6 Luna",
+      "summary": "免费版可对话、联网搜索，也可上传文件。",
+      "price": "free",
+      "priceLabel": "有免费档",
+      "limits": "文件上传与其他工具有独立额度。以 OpenAI 支持地区和账号菜单为准。",
+      "task": "把项目消息整理成行动清单。",
+      "prompt": "从这段项目消息里提取行动项。用四列列出任务、负责人、期限、依据。缺失项写待确认。",
+      "sources": [
+        {
+          "label": "ChatGPT 免费版说明",
+          "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+        },
+        {
+          "label": "ChatGPT 支持地区",
+          "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"
+        }
+      ],
+      "action": {
+        "label": "打开 ChatGPT",
+        "url": "https://chatgpt.com/"
+      }
+    },
+    {
+      "id": "gemini-carbon-tool",
+      "category": "chat",
+      "area": "global",
+      "brand": "Gemini",
+      "model": "Gemini 4 Carbon",
+      "summary": "在 Gemini 应用里尝试带多个步骤的任务。",
+      "price": "paid",
+      "priceLabel": "个人需 Google AI Ultra",
+      "limits": "个人端面向 Ultra 逐步开放。API 为付费入口，资格与用量按平台计算。",
+      "task": "从多份材料找出互相矛盾的说法。",
+      "prompt": "逐份阅读附件，做一张对照表。每一项差异都引用原句和文件名，并标明能否核实。",
+      "sources": [
+        {
+          "label": "Google Carbon 发布公告",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "id": "jimeng-image",
+      "category": "image",
+      "area": "cn",
+      "brand": "即梦",
+      "model": "Seedream 5.5",
+      "summary": "在画布里局部改图，或生成带透明背景的素材。",
+      "price": "varies",
+      "priceLabel": "积分／会员权益",
+      "limits": "在即梦网页版查看模型是否已开放。生成额度与分辨率依账户和方案而定。",
+      "task": "把商品图换成干净的电商背景。",
+      "prompt": "只改背景为柔和浅灰摄影棚。保持商品文字、比例、表面纹理与原图一致。",
+      "sources": [
+        {
+          "label": "字节跳动 Seed 发布公告",
+          "url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+        },
+        {
+          "label": "即梦功能与会员权益",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ],
+      "action": {
+        "label": "打开即梦",
+        "url": "https://jimeng.jianying.com/"
+      }
+    },
+    {
+      "id": "doubao-image",
+      "category": "image",
+      "area": "cn",
+      "brand": "豆包",
+      "model": "Seedream 5.5",
+      "summary": "在豆包的图像生成里找新版，适合用中文描述要改的细节。",
+      "price": "varies",
+      "priceLabel": "额度见产品页面",
+      "limits": "官方公告为陆续上线。查看图像生成的模型菜单和账户实际额度。",
+      "task": "在现有海报里替换一处装饰。",
+      "prompt": "只把右下角的植物换成一盏台灯。保留标题文字、布局和光线方向。",
+      "sources": [
+        {
+          "label": "字节跳动 Seed 发布公告",
+          "url": "https://seed.bytedance.com/zh/blog/more-realistic-images-more-stable-editing-across-100-rounds-introducing-seedream-5-5"
+        },
+        {
+          "label": "豆包付费服务协议",
+          "url": "https://www.doubao.com/legal/ey01"
+        }
+      ],
+      "action": {
+        "label": "打开豆包",
+        "url": "https://www.doubao.com/chat/"
+      }
+    },
+    {
+      "id": "chatgpt-images",
+      "category": "image",
+      "area": "global",
+      "brand": "ChatGPT 图片",
+      "model": "Images 2.6",
+      "summary": "直接生成草稿，或上传图片后选区修改。",
+      "price": "free",
+      "priceLabel": "免费档有生图额度",
+      "limits": "免费版生图有独立额度。高级思考生图随套餐开放，地区见官方列表。",
+      "task": "先做一张海报样稿。",
+      "prompt": "生成 4:5 咖啡店海报，只排「周五特调」四个字，底部留白，使用浅奶油底和深咖啡色字。",
+      "sources": [
+        {
+          "label": "OpenAI Images 2.6 发布公告",
+          "url": "https://openai.com/index/introducing-images-2-6/"
+        },
+        {
+          "label": "ChatGPT 免费版说明",
+          "url": "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq"
+        },
+        {
+          "label": "ChatGPT 支持地区",
+          "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"
+        }
+      ],
+      "action": {
+        "label": "打开 ChatGPT 图片",
+        "url": "https://chatgpt.com/images"
+      }
+    },
+    {
+      "id": "nano-banana",
+      "category": "image",
+      "area": "global",
+      "brand": "Gemini",
+      "model": "Nano Banana 2",
+      "summary": "适合根据参考图改颜色、背景或排版。",
+      "price": "free",
+      "priceLabel": "基础生图有免费档",
+      "limits": "官方额度表列有无需 Google AI 套餐的基础生图。Nano Banana Pro 重做属于其他套餐权益。",
+      "task": "给同一张图做两个配色版本。",
+      "prompt": "以这张图为参考，分别做森林绿和雾蓝版，只改背景和装饰色，保留主体和构图。",
+      "sources": [
+        {
+          "label": "Gemini 额度与功能",
+          "url": "https://support.google.com/gemini/answer/16275805?hl=en"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    },
+    {
+      "id": "chatgpt-work",
+      "category": "work",
+      "area": "global",
+      "brand": "ChatGPT Work",
+      "model": "GPT-6.1 Sol / Terra",
+      "summary": "处理文件、生成可编辑交付物，并持续执行多步骤任务。",
+      "price": "varies",
+      "priceLabel": "按套餐与额度",
+      "limits": "模型可见范围、额度与企业管理员权限依方案而定。Work 与普通 Chat 的用量口径各自计算。",
+      "task": "将会议记录整理成可编辑的行动表。",
+      "prompt": "读取我上传的会议记录，生成一份可编辑的行动表，列出事项、负责人、期限和出处。疑点单列。",
+      "sources": [
+        {
+          "label": "ChatGPT 模型与可用范围",
+          "url": "https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt"
+        },
+        {
+          "label": "ChatGPT Work 与 Codex 使用说明",
+          "url": "https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex"
+        },
+        {
+          "label": "ChatGPT 支持地区",
+          "url": "https://help.openai.com/en/articles/7947663-chatgpt-supported-countries"
+        }
+      ],
+      "action": {
+        "label": "打开 ChatGPT",
+        "url": "https://chatgpt.com/"
+      }
+    },
+    {
+      "id": "gemini-notebook",
+      "category": "work",
+      "area": "global",
+      "brand": "Gemini Notebook",
+      "model": "原 NotebookLM",
+      "summary": "从上传的资料生成摘要、测验和闪卡。",
+      "price": "free",
+      "priceLabel": "基础方案可用",
+      "limits": "可用 Gmail 账号免费注册基础方案。基础方案最多添加 50 个来源，生成内容的用量随套餐而定。",
+      "task": "用一份资料检验自己掌握了多少。",
+      "prompt": "根据这份讲义出五道练习题。先只给题目，我答完后再给评分和每道题的原文出处。",
+      "sources": [
+        {
+          "label": "Google 学习工具更新",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-study-tools-september-2026/"
+        },
+        {
+          "label": "Gemini Notebook 套餐说明",
+          "url": "https://support.google.com/gemininotebook/answer/16213268?hl=en"
+        },
+        {
+          "label": "Gemini Notebook 来源上限",
+          "url": "https://support.google.com/gemininotebook/answer/16215270?co=GENIE.Platform%3DDesktop&hl=en"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini Notebook",
+        "url": "https://notebook.google.com/"
+      }
+    },
+    {
+      "id": "jimeng-video",
+      "category": "video",
+      "area": "cn",
+      "brand": "即梦",
+      "model": "图片转视频",
+      "summary": "上传一张参考图，用中文描述镜头运动与画面变化。",
+      "price": "varies",
+      "priceLabel": "积分／会员权益",
+      "limits": "实际模型、队列和生成积分以即梦页面为准。",
+      "task": "将商品照片做成短视频开头。",
+      "prompt": "镜头缓慢推近商品，保持商品形状和文字不变。背景光轻微移动，无新增主体。",
+      "sources": [
+        {
+          "label": "即梦功能与会员权益",
+          "url": "https://jimeng.jianying.com/"
+        }
+      ],
+      "action": {
+        "label": "打开即梦",
+        "url": "https://jimeng.jianying.com/"
+      }
+    },
+    {
+      "id": "gemini-video",
+      "category": "video",
+      "area": "global",
+      "brand": "Gemini",
+      "model": "Omni 1.2 Flash",
+      "summary": "用文字或图片描述一段短视频，也能继续对生成结果提出修改。",
+      "price": "paid",
+      "priceLabel": "个人需 Google AI 套餐",
+      "limits": "个人账号须订阅并年满 18 岁。15 秒片段向 Ultra 账号开放，其他适用账号时长以页面为准。",
+      "task": "把静态海报改成短视频片头。",
+      "prompt": "从原海报出发，镜头缓慢向右移动，柔光扫过背景。保持标题可读，画面中没有新文字。",
+      "sources": [
+        {
+          "label": "Google 视频模型发布公告",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+        },
+        {
+          "label": "Gemini 视频生成说明",
+          "url": "https://support.google.com/gemini/answer/16126339?hl=en-12"
+        },
+        {
+          "label": "Gemini 支持地区",
+          "url": "https://support.google.com/gemini/answer/13575153?hl=zh-Hans"
+        }
+      ],
+      "action": {
+        "label": "打开 Gemini",
+        "url": "https://gemini.google.com/"
+      }
+    }
+  ]
+}
