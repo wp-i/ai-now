@@ -153,12 +153,6 @@ svg { flex-shrink: 0; vertical-align: middle; }
 .track-time { font-size: .72rem; color: #dee8dd; white-space: nowrap; font-variant-numeric: tabular-nums; }
 .track-error { grid-column: 1 / -1; color: #f1f4ef; font-size: .875rem; }
 
-.motion-sample { position: relative; display: grid; place-items: center; aspect-ratio: 16 / 9; overflow: hidden; border-radius: 8px; background: #322d28; }
-.motion-sample img { position: absolute; width: 100%; height: 100%; object-fit: contain; }
-.motion-sample button { position: absolute; inset: auto auto 9px 9px; display: flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; color: #fff; background: #24302af5; border: 1px solid #ffffffba; border-radius: 26px; font-size: .875rem; font-weight: 630; }
-.motion-sample button:hover { background: #19251e; }
-.motion-sample button:focus-visible { outline-color: #fff; border-radius: 26px; }
-.motion-sample p { position: absolute; inset: 8px 8px auto; padding: 5px 8px; background: var(--surface); border-radius: 4px; font-size: .8125rem; }
 
 @media (max-width: 730px) {
   .site-header { padding-top: 7px; }

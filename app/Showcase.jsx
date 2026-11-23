@@ -2,8 +2,6 @@ import CaseVideo from "./CaseVideo";
 import AudioSamples from "./AudioSamples";
 import ArtworkLayers from "./ArtworkLayers";
 import ImageComparison from "./ImageComparison";
-import MotionSample from "./MotionSample";
-import SeriesViewer from "./SeriesViewer";
 import { topicPath } from "../content/output-topics";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import "./still-gallery.css";
@@ -27,9 +25,7 @@ export function SiteHeader({ topics, active }) {
 
 function Evidence({ item, eager }) {
   if (item.artwork) return <ArtworkLayers artwork={item.artwork} />;
-  if (item.series) return <SeriesViewer images={item.series} eager={eager} />;
   if (item.comparison) return <ImageComparison media={item.comparison} eager={eager} />;
-  if (item.motion) return <MotionSample item={item} />;
   if (item.videos) return <div className="output-video-pair">
     {item.videos.map(({ stage, ...media }) => <div key={media.src}>
       <p>{stage}</p>
@@ -37,8 +33,8 @@ function Evidence({ item, eager }) {
     </div>)}
   </div>;
   if (item.images) return <div className={"image-output" + (item.images.length === 1 ? " image-output-single" : "")}>
-    {item.images.map(({ label, ...media }) => <div key={media.src}>
-      <img {...media} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} />
+    {item.images.map(({ label, alt, ...media }) => <div key={media.src}>
+      <img {...media} alt={alt} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} />
       {label && <span>{label}</span>}
     </div>)}
   </div>;
@@ -97,9 +93,9 @@ function StillCard({ item, eager = false, sizes, heading: Heading = "h3" }) {
   const { images, title, product, source, role } = item;
   return <article className={item.wide ? "still-card still-card-wide" : "still-card"} id={item.id} aria-labelledby={item.id + "-title"}>
     <div className={"still-images" + (images.length > 1 ? " still-images-pair" : "")}>
-      {images.map(({label, ...img}) => <a className="still-link" key={img.src} href={img.src} target="_blank" rel="noopener noreferrer"
-        aria-label={img.alt + "，查看大图（新窗口）"}>
-        <img {...img} sizes={sizes ?? (images.length > 1 ? "(max-width: 660px) 44vw, 23vw" : "(max-width: 660px) 92vw, (max-width: 1440px) 40vw, 570px")}
+      {images.map(({label, alt, ...img}) => <a className="still-link" key={img.src} href={img.src} target="_blank" rel="noopener noreferrer"
+        aria-label={alt + "，查看大图（新窗口）"}>
+        <img {...img} alt={alt} sizes={sizes ?? (images.length > 1 ? "(max-width: 660px) 44vw, 23vw" : "(max-width: 660px) 92vw, (max-width: 1440px) 40vw, 570px")}
           loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : undefined} decoding="async" />
         {label && <span className="still-image-label">{label}</span>}
       </a>)}

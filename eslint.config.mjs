@@ -7,6 +7,7 @@ const eslintConfig = defineConfig([
   ...nextTs,
   globalIgnores([
     "dist/**",
+    ".next/**",
     ".vinext/**",
     ".wrangler/**",
     ".sites-runtime/**",
@@ -14,13 +15,17 @@ const eslintConfig = defineConfig([
     "work/**",
   ]),
   {
-    files: ["components/ui/**/*.{ts,tsx}", "hooks/use-mobile.ts"],
+    files: ["app/Showcase.jsx", "app/not-found.tsx"],
     rules: {
-      // These files are vendored verbatim from shadcn@4.17.0. Keep the
-      // registry source intact while applying the stricter rules to Site code.
-      "@typescript-eslint/no-unused-vars": "off",
-      "react-hooks/purity": "off",
-      "react-hooks/set-state-in-effect": "off",
+      // These entry points intentionally use native navigation.
+      "@next/next/no-html-link-for-pages": "off",
+    },
+  },
+  {
+    files: ["app/Showcase.jsx", "app/ArtworkLayers.jsx", "app/CaseVideo.jsx", "app/ImageComparison.jsx"],
+    rules: {
+      // Artwork and comparisons render the curated originals and supplied srcsets.
+      "@next/next/no-img-element": "off",
     },
   },
 ]);

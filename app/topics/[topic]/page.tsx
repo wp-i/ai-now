@@ -6,7 +6,7 @@ import { readOutputTopics } from "../../../lib/output-catalog";
 
 export const dynamic = "force-dynamic";
 
-type TopicPage = { params: Promise<{ topic: string }>, searchParams: Promise<{ dimension?: string | string[] }> };
+type TopicPage = { params: Promise<{ topic: string }> };
 
 export async function generateMetadata({ params }: TopicPage): Promise<Metadata> {
   const { topic } = await params;

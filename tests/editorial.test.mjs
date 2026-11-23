@@ -15,7 +15,7 @@ test("initial editorial edition has valid entries and official HTTPS links", () 
 });
 
 test("invalid entries cannot mark an edition as newly checked", () => {
-  const { checkedAt, ...input } = seed;
+  const input = { edition: seed.edition, stories: seed.stories, tools: seed.tools };
   const story = { ...seed.stories[0] };
   assert.equal(editionInput.safeParse({ ...input, stories: [story, story] }).success, false);
   assert.equal(editionInput.safeParse({ ...input, stories: [{ ...story, published: "2099-01-01" }] }).success, false);

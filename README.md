@@ -1,46 +1,26 @@
-# AI 资讯站
+# AI Now
 
-给想了解 AI 发展进度的中文读者看实际产出。直接看原图、拖拽比较照片编辑、播放原片和音轨，也可以到原作试玩游戏或网页。公开页面无需登录。
+通过真实作品了解 AI 做到了哪一步。看一张原图、拖动一次前后对照，或用十几秒看完一段原片。
 
-[打开网站](https://ai-now-cn-261113.wp9617.chatgpt.site/) · [产品目标与复盘](docs/PROJECT.md) · [选材规则](content/editorial-policy.md) · [展示审核记录](content/showcase-review.md)
+**[打开 AI Now ↗](https://ai-now-cn-261113.wp9617.chatgpt.site/)** · 中文 · 无需登录
 
-## 浏览
+[![AI Now 电脑端首页。左侧是冻在冰里的红色手提包，右侧是《REDLINE》的夜雨赛车。](docs/media/home-desktop.jpg)](https://ai-now-cn-261113.wp9617.chatgpt.site/)
 
-首页以图像和视频开场，拓展到声音、游戏和网页创作。第 36 版的首页有 11 件作品，五个专区共 29 件。作品卡标注可核实的来源、日期和模型或创作工具，并说明 AI 真正完成的部分。
+一次图像编辑，连半透明的玻璃和反光都得一起改。一个赛道镜头，靠水面倒影和低机位让速度有了重量。作品附原作者出处，也交代参考素材、人工参与和这次结果成立的条件。
+
+- **图像** · 玻璃壶被移到柠檬篮后，遮挡和倒影一起变化。[拖动对照](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/images#glass-pitcher-edit)
+- **视频** · 两辆车在湿滑赛道贴近镜头，车灯沿积水掠过。[看《REDLINE》](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/video#redline)
+- **声音、游戏与网页** · 听一首歌怎样转入副歌，走进积水教堂打一场首领战，或在网页打字机上敲字。[声音](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/audio) · [游戏](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/software) · [网页](https://ai-now-cn-261113.wp9617.chatgpt.site/topics/creative)
 
 ## 本地运行
 
-需要 Node.js 22.13 或以上。
+需要 Node.js 22.13 或以上。启动开发预览后，打开终端显示的地址。
 
 ```sh
 npm ci
 npm run dev
 ```
 
-打开命令行显示的地址。公开展示的目录自带数据和媒体，开发预览无需配置编辑账号。
+[项目结构与发布](docs/development.md) · [选材与验收](docs/editorial.md) · [版本记录](docs/releases.md)
 
-```sh
-node --test
-npm run build
-```
-
-如需试用可持久保存版次的生产运行方式，构建后使用以下命令初始化本地数据库并启动。已有本地数据库只需应用尚未执行的迁移。
-
-```sh
-node --import ./scripts/sites-env.mjs ./node_modules/wrangler/bin/wrangler.js d1 execute DB --local --config dist/server/wrangler.json --persist-to .wrangler/state --file drizzle/0000_flaky_black_widow.sql
-npm start
-```
-
-## 维护
-
-- `lib/output-catalog.js` 管理已审作品与首页编排，`content/` 管理作品信息、来源、候选与审核记录。`app/` 维护浏览和媒体交互。
-- 公开目录由已核验的源码版本更新。动态订阅和受保护的编辑接口保留在 `/api/live`、`/api/editorial` 和 `/mcp`，其中编辑版次使用 D1。编辑者由服务端的 `EDITORIAL_OWNER_EMAIL` 核对，写入需提供当前 revision。生产部署沿用 Sites。
-- 提交前对照[产品目标与当前进度](docs/PROJECT.md)，记录新增作品的原作、可观察结果和同类对照。正文页面和重点交互以 PC 浏览器验证。
-
-图像、视频和声音保留原作者的署名与来源。这些素材的权利和使用条件遵循原作者或发布平台的声明。
-
-## 发布与回查
-
-1. 在 [wp-i/ai-now](https://github.com/wp-i/ai-now) 记录源码提交与本轮选材记录。
-2. 更新公开站时，使用 `.openai/hosting.json` 对应的现有 Sites 项目，从待发布的源码构建。发布后在 PC 打开正式站，检查首页、受影响的分类页，以及作品的媒体和来源入口。在审核记录中写下站点版本和验证结果。
-3. 作品集的项目信息维护在 [wp-i/wp-homepage](https://github.com/wp-i/wp-homepage) 的 `src/content/site.ts`。作品集入口有变化时，等 GitHub Pages 发布完成，再检查公开条目能打开站点和源码。
+展示素材的使用条件以原作者或发布平台的说明为准。首页预览中的图像来自 [Recraft](https://www.recraft.ai/blog/gpt-image-2-6)，视频来自 [Stephane Benini 的《REDLINE》](https://kling.ai/blog/hitting-redline-make-cinematic-racing-kling4)。
